@@ -1,0 +1,7 @@
+[alias]
+start=["watch", "-q", "-c", "-x run --features bevy/dynamic"]
+slow_watch=["watch", "-q", "-c"]
+
+[target.x86_64-pc-windows-msvc]
+linker = "rust-lld.exe"
+rustflags = ["-Zshare-generics=off"]
